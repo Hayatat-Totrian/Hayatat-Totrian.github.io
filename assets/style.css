@@ -342,6 +342,46 @@ main.has-hero {
   color: #ffffff;
 }
 
+.pub-entry details.abstract {
+  margin-top: 10px;
+}
+
+.pub-entry details.abstract summary {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  padding: 3px 14px;
+  border: 1.5px solid var(--rule);
+  border-radius: 999px;
+  user-select: none;
+}
+
+.pub-entry details.abstract summary:hover {
+  border-color: var(--accent);
+}
+
+.pub-entry details.abstract[open] summary {
+  background: var(--bg-soft);
+  border-color: var(--accent);
+}
+
+.pub-entry details.abstract p {
+  margin: 10px 0 0;
+  padding: 14px 16px;
+  background: var(--bg-soft);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 6px 6px 0;
+  font-size: 0.93rem;
+  line-height: 1.7;
+}
+
+.rip-note {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
 /* ---------- Contact block ---------- */
 
 .contact-list {
