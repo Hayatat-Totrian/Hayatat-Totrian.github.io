@@ -1,0 +1,314 @@
+/* ===============================================
+   Tomoki Hayata — Academic Homepage
+   =============================================== */
+
+:root {
+  --accent: #1f4e79;
+  --accent-dark: #163a5a;
+  --text: #222222;
+  --text-muted: #555555;
+  --rule: #dddddd;
+  --bg-soft: #f7f8fa;
+  --serif: Georgia, "Times New Roman", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--text);
+  background: #ffffff;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---------- Header / Navigation ---------- */
+
+.site-header {
+  border-bottom: 3px solid var(--accent);
+  background: #ffffff;
+}
+
+.site-header .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 16px;
+}
+
+.site-title {
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  font-size: 0.95rem;
+}
+
+.site-nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover {
+  color: var(--accent);
+}
+
+.site-nav a.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+  font-weight: 600;
+}
+
+/* ---------- Main content ---------- */
+
+main {
+  padding: 44px 0 64px;
+}
+
+h1 {
+  font-family: var(--serif);
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: var(--text);
+}
+
+h2 {
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--accent-dark);
+  margin: 40px 0 14px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--rule);
+}
+
+h2:first-child {
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 24px 0 10px;
+}
+
+p {
+  margin-bottom: 14px;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--accent-dark);
+}
+
+ul {
+  margin: 0 0 16px 1.3em;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+em,
+.journal {
+  font-style: italic;
+}
+
+/* ---------- Home: profile section ---------- */
+
+.profile {
+  display: flex;
+  gap: 36px;
+  align-items: flex-start;
+}
+
+.profile-photo {
+  flex: 0 0 200px;
+}
+
+.profile-photo img {
+  width: 200px;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+}
+
+.profile-text h1 {
+  margin-bottom: 4px;
+}
+
+.profile-text .affiliation {
+  color: var(--text-muted);
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+/* ---------- Contact block ---------- */
+
+.contact-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.contact-list li {
+  margin-bottom: 6px;
+}
+
+.contact-list .label {
+  display: inline-block;
+  min-width: 90px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* ---------- News / spotlight ---------- */
+
+.news-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.news-list li {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.news-list .date {
+  flex: 0 0 90px;
+  font-weight: 600;
+  color: var(--accent-dark);
+}
+
+/* ---------- CV-style date rows ---------- */
+
+.cv-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.cv-list li {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.cv-list .date {
+  flex: 0 0 130px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* ---------- Publication list ---------- */
+
+.pub-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.pub-list li {
+  margin-bottom: 16px;
+  padding-left: 1.2em;
+  text-indent: -1.2em;
+}
+
+/* ---------- Buttons ---------- */
+
+.button {
+  display: inline-block;
+  background: var(--accent);
+  color: #ffffff;
+  padding: 10px 22px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.button:hover {
+  background: var(--accent-dark);
+  color: #ffffff;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  border-top: 1px solid var(--rule);
+  background: var(--bg-soft);
+  padding: 24px 0;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.site-footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  justify-content: space-between;
+}
+
+.site-footer a {
+  color: var(--text-muted);
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 640px) {
+  .site-header .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-text {
+    text-align: left;
+  }
+
+  .news-list li,
+  .cv-list li {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .news-list .date,
+  .cv-list .date {
+    flex: none;
+  }
+}
