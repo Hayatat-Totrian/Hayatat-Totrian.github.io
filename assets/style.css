@@ -169,6 +169,7 @@ main.has-hero {
 
 .profile-photo {
   flex: 0 0 200px;
+  margin-top: 14px;
 }
 
 .profile-photo img {
