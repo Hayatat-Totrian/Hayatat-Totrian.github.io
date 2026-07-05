@@ -5,6 +5,8 @@
 :root {
   --accent: #1f4e79;
   --accent-dark: #163a5a;
+  --gold: #b07d2b;
+  --gold-dark: #8a6420;
   --text: #222222;
   --text-muted: #555555;
   --rule: #dddddd;
@@ -106,9 +108,9 @@ h2 {
   font-size: 1.35rem;
   font-weight: 700;
   color: var(--accent-dark);
-  margin: 40px 0 14px;
-  padding-bottom: 6px;
-  border-bottom: 1px solid var(--rule);
+  margin: 40px 0 16px;
+  padding-left: 14px;
+  border-left: 4px solid var(--accent);
 }
 
 h2:first-child {
@@ -146,7 +148,18 @@ em,
   font-style: italic;
 }
 
-/* ---------- Home: profile section ---------- */
+/* ---------- Home: hero band & profile section ---------- */
+
+main.has-hero {
+  padding-top: 0;
+}
+
+.hero {
+  background: linear-gradient(180deg, #eef3f8 0%, #ffffff 100%);
+  border-bottom: 1px solid var(--rule);
+  padding: 52px 0 44px;
+  margin-bottom: 44px;
+}
 
 .profile {
   display: flex;
@@ -240,14 +253,33 @@ em,
   padding: 18px;
   background: #ffffff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.spotlight-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(31, 78, 121, 0.14);
+}
+
+.spotlight-card.award {
+  border-top-color: var(--gold);
 }
 
 .spotlight-card .tag {
-  font-size: 0.72rem;
+  align-self: flex-start;
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--accent);
+  background: rgba(31, 78, 121, 0.08);
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.spotlight-card.award .tag {
+  color: var(--gold-dark);
+  background: rgba(176, 125, 43, 0.12);
 }
 
 .spotlight-card .title {
@@ -280,10 +312,34 @@ em,
 
 .pub-entry .pub-authors {
   margin-bottom: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
 }
 
 .pub-entry .pub-venue {
   margin-bottom: 0;
+}
+
+.pub-entry .pub-links {
+  margin: 8px 0 0;
+}
+
+.pub-link {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 3px 14px;
+  margin-right: 8px;
+  border: 1.5px solid var(--accent);
+  border-radius: 999px;
+  color: var(--accent);
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.pub-link:hover {
+  background: var(--accent);
+  color: #ffffff;
 }
 
 /* ---------- Contact block ---------- */
@@ -361,8 +417,8 @@ em,
   display: inline-block;
   background: var(--accent);
   color: #ffffff;
-  padding: 10px 22px;
-  border-radius: 5px;
+  padding: 10px 24px;
+  border-radius: 999px;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
@@ -376,19 +432,18 @@ em,
 /* ---------- Footer ---------- */
 
 .site-footer {
-  border-top: 1px solid var(--rule);
-  background: var(--bg-soft);
-  padding: 36px 0 24px;
+  background: var(--accent-dark);
+  padding: 40px 0 24px;
   font-size: 0.9rem;
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.72);
 }
 
 .site-footer a {
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .site-footer a:hover {
-  color: var(--accent);
+  color: #ffffff;
 }
 
 .footer-cols {
@@ -401,7 +456,7 @@ em,
 .footer-cols h4 {
   font-family: var(--serif);
   font-size: 1rem;
-  color: var(--text);
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
@@ -420,7 +475,7 @@ em,
 }
 
 .footer-bottom {
-  border-top: 1px solid var(--rule);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
   padding-top: 16px;
   text-align: center;
   font-size: 0.85rem;
