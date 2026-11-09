@@ -413,6 +413,40 @@ details.abs p {
   font-size: 0.95rem;
 }
 
+/* ---------- Research streams (two columns: label / title / text) ---------- */
+
+.streams {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
+  border-top: 1px solid var(--ink);
+}
+
+.stream {
+  padding: 18px 0 20px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.stream .where {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.stream h3 {
+  font-size: 1.02rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+.stream p {
+  font-size: 0.92rem;
+  color: var(--body);
+}
+
 /* ---------- Button ---------- */
 
 .btn {
@@ -525,7 +559,8 @@ details.abs p {
     gap: 2px;
   }
 
-  .grid2 {
+  .grid2,
+  .streams {
     grid-template-columns: 1fr;
   }
 
