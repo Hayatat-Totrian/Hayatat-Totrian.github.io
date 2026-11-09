@@ -21,14 +21,29 @@
   <meta property="og:image" content="https://hayatat-totrian.github.io/images/profile.jpg">
   <meta name="twitter:card" content="summary">
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-<header class="site-header">
-  <div class="container">
-    <a class="site-title" href="index.html">Tomoki Hayata</a>
-    <nav class="site-nav">
+<div class="page">
+
+  <aside class="side">
+    <img class="photo" src="images/profile.jpg" alt="Tomoki Hayata">
+    <div class="ident">
+      <div class="name">Tomoki Hayata</div>
+      <p class="aff">Ph.D. Candidate<br>Graduate School of Business Administration<br>Kobe University</p>
+    </div>
+    <p class="meta">221b010b [at] stu.kobe-u.ac.jp<br>2-1 Rokkodai-cho, Nada-ku, Kobe 657-8501, Japan</p>
+    <p class="social">
+      <a href="https://scholar.google.com/citations?user=lMuCdc4AAAAJ">Google Scholar</a>
+      <a href="https://twitter.com/T_H_0123">X</a>
+      <a href="https://www.linkedin.com/in/tomoki-hayata-b653423a1">LinkedIn</a>
+      <a href="https://researchmap.jp/hayatat?lang=en">researchmap</a>
+    </p>
+    <nav class="side-nav" aria-label="Site">
       <a href="index.html">Home</a>
       <a href="cv.html" class="active">CV</a>
       <a href="publications.html">Publications</a>
@@ -37,97 +52,52 @@
       <a href="data.html">Data &amp; Code</a>
       <a href="ja.html">日本語</a>
     </nav>
-  </div>
-</header>
+  </aside>
 
-<main>
-  <div class="container">
+  <main>
 
-    <h1>Curriculum Vitae</h1>
+    <h1 class="title">Curriculum Vitae</h1>
+    <a class="btn" href="cv.pdf">Download full CV (PDF) &darr;</a>
 
-    <p><a class="button" href="cv.pdf">Download full CV (PDF)</a></p>
-
-    <h2>Education</h2>
-    <ul class="cv-list">
-      <li>
-        <span class="date">2024&ndash;present</span>
-        <span>Ph.D. in Business Administration, Kobe University, Japan</span>
-      </li>
-      <li>
-        <span class="date">2022&ndash;2024</span>
-        <span>M.A. in Business Administration, Kobe University, Japan</span>
-      </li>
-      <li>
-        <span class="date">2018&ndash;2022</span>
-        <span>B.A. in Commerce, Kumamoto Gakuen University, Japan</span>
-      </li>
-    </ul>
-
-    <h2>Research Awards and Honors</h2>
-    <ul class="cv-list">
-      <li>
-        <span class="date">2026</span>
-        <span>Best Research Paper Award for Doctoral Students, Kobe University</span>
-      </li>
-      <li>
-        <span class="date">2026</span>
-        <span>Best International Paper Award, Graduate School of Business Administration, Kobe University</span>
-      </li>
-    </ul>
-
-    <h2>Grants</h2>
-    <ul class="cv-list">
-      <li>
-        <span class="date">2024&ndash;present</span>
-        <span>Japan Science and Technology Agency, Support for Pioneering Research Initiated by the Next Generation</span>
-      </li>
-    </ul>
-
-    <h2>Service</h2>
-    <ul class="cv-list">
-      <li>
-        <span class="date">2026</span>
-        <span>Ad hoc reviewer, <span class="journal">Journal of Retailing and Consumer Services</span></span>
-      </li>
-    </ul>
-
-  </div>
-</main>
-
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-cols">
-      <div>
-        <h4>Tomoki Hayata</h4>
-        <p>
-          Ph.D. Candidate<br>
-          Graduate School of Business Administration, Kobe University<br>
-          2-1 Rokkodai-cho, Nada-ku, Kobe, Japan
-        </p>
+    <section class="sec">
+      <h2 class="lab">Education</h2>
+      <div class="defs">
+        <div class="def"><span class="d">2024 &ndash; present</span><span>Ph.D. in Business Administration, Kobe University, Japan</span></div>
+        <div class="def"><span class="d">2022 &ndash; 2024</span><span>M.A. in Business Administration, Kobe University, Japan</span></div>
+        <div class="def"><span class="d">2018 &ndash; 2022</span><span>B.A. in Commerce, Kumamoto Gakuen University, Japan</span></div>
       </div>
-      <div>
-        <h4>Links</h4>
-        <ul>
-          <li><a href="cv.html">CV</a></li>
-          <li><a href="publications.html">Publications</a></li>
-          <li><a href="presentations.html">Presentations</a></li>
-          <li><a href="teaching.html">Teaching</a></li>
-          <li><a href="https://researchmap.jp/hayatat?lang=en">researchmap</a></li>
-        </ul>
+    </section>
+
+    <section class="sec">
+      <h2 class="lab">Research Awards and Honors</h2>
+      <div class="defs">
+        <div class="def"><span class="d">2026</span><span>Best Research Paper Award for Doctoral Students, Kobe University</span></div>
+        <div class="def"><span class="d">2026</span><span>Best International Paper Award, Graduate School of Business Administration, Kobe University</span></div>
       </div>
-      <div>
-        <h4>Contact</h4>
-        <ul>
-          <li>221b010b [at] stu.kobe-u.ac.jp</li>
-          <li><a href="https://scholar.google.com/citations?user=lMuCdc4AAAAJ">Google Scholar</a></li>
-          <li><a href="https://twitter.com/T_H_0123">X (@T_H_0123)</a></li>
-          <li><a href="https://www.linkedin.com/in/tomoki-hayata-b653423a1">LinkedIn</a></li>
-        </ul>
+    </section>
+
+    <section class="sec">
+      <h2 class="lab">Grants</h2>
+      <div class="defs">
+        <div class="def"><span class="d">2024 &ndash; present</span><span>Japan Science and Technology Agency, Support for Pioneering Research Initiated by the Next Generation</span></div>
       </div>
-    </div>
-    <div class="footer-bottom">&copy; 2026 Tomoki Hayata</div>
-  </div>
-</footer>
+    </section>
+
+    <section class="sec">
+      <h2 class="lab">Service</h2>
+      <div class="defs">
+        <div class="def"><span class="d">2026</span><span>Ad hoc reviewer, <span class="journal">Journal of Retailing and Consumer Services</span></span></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <span>&copy; 2026 Tomoki Hayata</span>
+    <span>Graduate School of Business Administration, Kobe University</span>
+  </footer>
+
+</div>
 
 </body>
 </html>

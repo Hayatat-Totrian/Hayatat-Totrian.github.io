@@ -21,14 +21,29 @@
   <meta property="og:image" content="https://hayatat-totrian.github.io/images/profile.jpg">
   <meta name="twitter:card" content="summary">
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-<header class="site-header">
-  <div class="container">
-    <a class="site-title" href="index.html">Tomoki Hayata</a>
-    <nav class="site-nav">
+<div class="page">
+
+  <aside class="side">
+    <img class="photo" src="images/profile.jpg" alt="Tomoki Hayata">
+    <div class="ident">
+      <div class="name">Tomoki Hayata</div>
+      <p class="aff">Ph.D. Candidate<br>Graduate School of Business Administration<br>Kobe University</p>
+    </div>
+    <p class="meta">221b010b [at] stu.kobe-u.ac.jp<br>2-1 Rokkodai-cho, Nada-ku, Kobe 657-8501, Japan</p>
+    <p class="social">
+      <a href="https://scholar.google.com/citations?user=lMuCdc4AAAAJ">Google Scholar</a>
+      <a href="https://twitter.com/T_H_0123">X</a>
+      <a href="https://www.linkedin.com/in/tomoki-hayata-b653423a1">LinkedIn</a>
+      <a href="https://researchmap.jp/hayatat?lang=en">researchmap</a>
+    </p>
+    <nav class="side-nav" aria-label="Site">
       <a href="index.html">Home</a>
       <a href="cv.html">CV</a>
       <a href="publications.html">Publications</a>
@@ -37,60 +52,33 @@
       <a href="data.html" class="active">Data &amp; Code</a>
       <a href="ja.html">日本語</a>
     </nav>
-  </div>
-</header>
+  </aside>
 
-<main>
-  <div class="container">
+  <main>
 
-    <h1>Data &amp; Code</h1>
+    <h1 class="title">Data &amp; Code</h1>
 
-    <h2>Data</h2>
-    <div class="pub-entry">
-      <p class="pub-title">Financial data for the past five years in EDINET: From consolidated financial statements prepared under Japanese GAAP (2015&ndash;2020) [Data set]</p>
-      <p class="pub-authors">Tomoki Hayata and Toru Ogasawara</p>
-      <p class="pub-venue"><span class="journal">Kaikei Kagaku（会計科学）</span>, 2021, e2020(25). (in Japanese)</p>
-      <p>EDINETにおける過去５年分の財務データ：2015年から2020年までの日本基準を採用した連結財務諸表から作成したデータセットです。</p>
-      <p class="pub-links"><a class="pub-link" href="https://sites.google.com/view/accscijournal/e2020">Download</a></p>
-    </div>
-
-  </div>
-</main>
-
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-cols">
-      <div>
-        <h4>Tomoki Hayata</h4>
-        <p>
-          Ph.D. Candidate<br>
-          Graduate School of Business Administration, Kobe University<br>
-          2-1 Rokkodai-cho, Nada-ku, Kobe, Japan
-        </p>
+    <section class="sec">
+      <h2 class="lab">Data</h2>
+      <div class="pubs">
+        <div class="pub">
+          <div class="t">Financial data for the past five years in EDINET: From consolidated financial statements prepared under Japanese GAAP (2015&ndash;2020) [Data set]</div>
+          <div class="a">Tomoki Hayata and Toru Ogasawara</div>
+          <div class="v"><span class="journal">Kaikei Kagaku（会計科学）</span>, 2021, e2020(25). (in Japanese)</div>
+          <div class="desc">EDINETにおける過去５年分の財務データ：2015年から2020年までの日本基準を採用した連結財務諸表から作成したデータセットです。</div>
+          <div class="links"><a href="https://sites.google.com/view/accscijournal/e2020">Download &nearr;</a></div>
+        </div>
       </div>
-      <div>
-        <h4>Links</h4>
-        <ul>
-          <li><a href="cv.html">CV</a></li>
-          <li><a href="publications.html">Publications</a></li>
-          <li><a href="presentations.html">Presentations</a></li>
-          <li><a href="teaching.html">Teaching</a></li>
-          <li><a href="https://researchmap.jp/hayatat?lang=en">researchmap</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <ul>
-          <li>221b010b [at] stu.kobe-u.ac.jp</li>
-          <li><a href="https://scholar.google.com/citations?user=lMuCdc4AAAAJ">Google Scholar</a></li>
-          <li><a href="https://twitter.com/T_H_0123">X (@T_H_0123)</a></li>
-          <li><a href="https://www.linkedin.com/in/tomoki-hayata-b653423a1">LinkedIn</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">&copy; 2026 Tomoki Hayata</div>
-  </div>
-</footer>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <span>&copy; 2026 Tomoki Hayata</span>
+    <span>Graduate School of Business Administration, Kobe University</span>
+  </footer>
+
+</div>
 
 </body>
 </html>
