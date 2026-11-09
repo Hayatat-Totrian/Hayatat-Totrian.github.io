@@ -413,7 +413,7 @@ details.abs p {
   font-size: 0.95rem;
 }
 
-/* ---------- Research streams (two columns: label / title / text) ---------- */
+/* ---------- Research streams (two columns + one full-width row: label / title / text) ---------- */
 
 .streams {
   display: grid;
@@ -425,6 +425,14 @@ details.abs p {
 .stream {
   padding: 18px 0 20px;
   border-bottom: 1px solid var(--rule);
+}
+
+.stream.wide {
+  grid-column: 1 / -1;
+}
+
+.stream.wide p {
+  max-width: 620px;
 }
 
 .stream .where {
